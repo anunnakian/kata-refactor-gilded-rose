@@ -1,9 +1,13 @@
-bin
-obj
-*.sln.DotSettings.user
-.vs
-vendor
-.idea
+.idea/
 *.iml
-**/*.received.*
-venv
+target/
+
+.classpath
+.project
+bin/
+.settings/
+
+# Gradle
+.gradle
+/build/
+
