@@ -16,10 +16,10 @@ class GildedRoseTest {
       rose.updateQuality();
       golden.updateQuality();
 
-      assertThat(rose.items)
+      assertThat(rose.getItems())
         .extracting(item -> item.sellIn)
         .containsExactly(Arrays.stream(golden.items).map(item -> item.sellIn).toArray(Integer[]::new));
-      assertThat(rose.items)
+      assertThat(rose.getItems())
         .extracting(item -> item.quality)
         .containsExactly(Arrays.stream(golden.items).map(item -> item.quality).toArray(Integer[]::new));
     }
